@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -21,5 +22,15 @@
 
 body {
     background-color: var(--color-black);
-    color: var(--color-creame)
+    color: var(--color-creame);
+
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 120px;
+    line-height: 120px;
 }
