@@ -1,0 +1,9 @@
+nav {
+    height: 140px;
+    margin: 0 auto;
+    border-bottom: solid 0.5px var(--color-light-gray);
+}
+
+.nav-item-border{
+    border: solid 0.5px var(--color-light-gray);
+}
