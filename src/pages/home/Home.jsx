@@ -6,7 +6,6 @@ import TechStack from '../../components/TechStack';
 
 import { BsFillCpuFill } from "react-icons/bs";
 import { HiBriefcase } from "react-icons/hi2";
-import { TbDeviceDesktopCode } from "react-icons/tb";
 import { RiGitRepositoryFill } from "react-icons/ri";
 
 
