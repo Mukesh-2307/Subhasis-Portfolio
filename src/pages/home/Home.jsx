@@ -11,6 +11,7 @@ import { RiGitRepositoryFill } from "react-icons/ri";
 
 import ExperienceList from '../../components/ExperienceList';
 import Footer from '../../components/Footer/Footer';
+import ProjectList from '../../components/ProjectList';
 
 const socialsLink = [
   { label: 'twitter', link: '#' },
@@ -65,7 +66,7 @@ const Home = () => {
 
       <SectionTemplate title="Experience" subText="I have practical experience driving operational efficiency through automation, data pipelines, and product solutions in fast-paced, real-world environments" MyComponent={ExperienceList} MyIconComponent={HiBriefcase} loadMore={true} colorScheme="--color-pink"/>
 
-      <SectionTemplate title="Projects" subText="I’ve built impactful projects across automation, data pipelines, and IoT, showcasing my ability to deliver real-world tech solutions" MyComponent={ExperienceList} MyIconComponent={RiGitRepositoryFill} loadMore={true} colorScheme="--color-green"/>
+      <SectionTemplate title="Projects" subText="I’ve built impactful projects across automation, data pipelines, and IoT, showcasing my ability to deliver real-world tech solutions" MyComponent={ProjectList} MyIconComponent={RiGitRepositoryFill} loadMore={true} colorScheme="--color-green"/>
 
       <Footer/>
     </>
