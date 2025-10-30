@@ -1,10 +1,15 @@
 import React from 'react'
 import './Navbar.css'
+import { HiOutlineHome } from "react-icons/hi2";
+import { HiOutlineBriefcase } from "react-icons/hi2";
+import { MdOutlineAssignment } from "react-icons/md";
+import { HiOutlinePhone } from "react-icons/hi";
+
 
 const navbarItems = [
-    { label: "Home", link: "/" },
-    { label: "Projects", link: "/projects" },
-    { label: "About", link: "/about" },
+    { label: "Home", link: "/", icon: <HiOutlineHome /> },
+    { label: "Projects", link: "/projects", icon: <HiOutlineBriefcase /> },
+    { label: "About", link: "/about", icon: <MdOutlineAssignment /> },
 ]
 
 const Navbar = () => {
@@ -24,7 +29,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div>
-                <button className='nav-item-border p-4 rounded-full h-[82px] cursor-pointer'>Contact Me</button>
+
+                <button className='nav-item-border p-4 rounded-full h-[82px] cursor-pointer flex gap-2 items-center justify-between'><HiOutlinePhone />Contact Me</button>
             </div>
         </nav>
     )
@@ -32,7 +38,8 @@ const Navbar = () => {
 
 const ListItem = ({ navItem }) => {
     return (
-        <li className='cursor-pointer'>
+        <li className='cursor-pointer flex gap-2 items-center justify-between'>
+            {navItem.icon}
             <a href={navItem.link} className='no-underline'>{navItem.label}</a>
         </li>
     )
