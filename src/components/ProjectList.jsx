@@ -26,12 +26,12 @@ const ProjectList = () => {
         <>
             {projList?.map((proj, index) => {
                 return (
-                    <div className='flex flex-col text-[50px]/[56px] my-16 pb-10 border-b-[0.5px] border-[var(--color-light-gray)] gap-10' key={index}>
-                        <div className='flex justify-between items-center'>
+                    <div className='flex flex-col text-[40px]/[48px] my-16 pb-10 border-b-[0.5px] border-[var(--color-light-gray)] gap-10' key={index}>
+                        <div className='flex justify-between items-start'>
                             <p className='max-w-[1000px]'>{proj.name}</p>
                             <p>{proj.type}</p>
                         </div>
-                        <div className='flex justify-between items-center'>
+                        <div className='flex justify-between items-start'>
                             <p>{proj.year}</p>
                             <div className='flex gap-4 w-[700px] justify-end flex-wrap'>
                                 {
