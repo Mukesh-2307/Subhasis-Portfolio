@@ -2,7 +2,7 @@ import React from 'react'
 import './SectionTemplate.css'
 import LoadMoreBtn from './LoadMoreBtn'
 
-const SectionTemplate = ({ title, subText, MyComponent, MyIconComponent, loadMore, colorScheme }) => {
+const SectionTemplate = ({ title, subText, MyComponent, MyIconComponent, loadMore, colorScheme, redirectTo }) => {
     return (
         <div className='px-10 my-10 flex flex-col'>
             <div className='border-b-[0.5px] border-[var(--color-light-gray)] pb-6 relative'>
@@ -15,7 +15,7 @@ const SectionTemplate = ({ title, subText, MyComponent, MyIconComponent, loadMor
             </div>
             {
                 loadMore &&
-                <LoadMoreBtn colorScheme={colorScheme}/>
+            <LoadMoreBtn colorScheme={colorScheme} redirectTo={redirectTo}/>
             }
         </div>
     )
