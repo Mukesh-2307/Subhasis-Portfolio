@@ -29,6 +29,14 @@
     --title-weight: 400;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
 body {
     background-color: var(--color-black);
     color: var(--color-white);
@@ -40,6 +48,11 @@ body {
     font-size: var(--body-font);
     font-weight: var(--body-weight);
     line-height: var(--body-line);
+    
+    /* Optimize for smooth animations */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .title {
