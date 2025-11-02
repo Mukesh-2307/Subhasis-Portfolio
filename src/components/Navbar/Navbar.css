@@ -6,4 +6,10 @@ nav {
 
 .nav-item-border{
     border: solid 0.5px var(--color-light-gray);
+    transition: all 0.3s ease;
+}
+
+.nav-item-border:hover {
+    border-color: var(--color-purple);
+    box-shadow: 0 0 20px rgba(177, 59, 255, 0.3);
 }
